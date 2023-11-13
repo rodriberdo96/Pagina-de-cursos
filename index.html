@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/1348965c05.js" crossorigin="anonymous"></script>
+    <title>System Course</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo"> System <em>Course</em></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Course</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>System Course</h1>
+            <p>Diseñando páginas web nunca fue tan fácil. Solo necesitas aprender HTML, CSS <br> y Javascript y ya podes empezar!</p>
+            <a href="" class="hero-btn">Visitanos para saber mas</a>
+        </div>
+    </section>
+    <!----About---->
+    <section class="about-us" id="about">
+        <div class="row">
+            <div class="about-col">
+                <h1>Somos la mejor plataforma para aprender programación</h1>
+                <p>System Course es una plataforma para aprender a programar desde cero. <br> Aprende HTML, CSS, Javascript, PHP y MySQL.</p>
+                <a href="#courses" class="hero-btn red-btn">Explora ahora</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="about-us">
+        </div>
+    </section>
+    <!----Cursos---->
+    <section class="course" id="courses">
+        <h1>Cursos que ofrecemos</h1>
+        <p>Estos son los cursos que ofrecemos en System Course</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Python</h3>
+                <p>Este curso es para aquellos que no tienen conocimientos previos de programacion. En este curso aprenderas a programar en Python desde cero.</p>
+            </div>
+            <div class="course-col">
+                <h3>Desarrollo Web</h3>
+                <p>En este curso aprenderas a programar en HTML, CSS y Javascript desde cero.</p>
+            </div>
+            <div class="course-col">
+                <h3>Backend</h3>
+                <p>En este curso aprenderas a programar en PHP y MySQL desde cero.</p>
+            </div>
+        </div>
+    </section>
+    <!----Testimonials---->
+    <section class="testimonials">
+        <h1>Que dicen nuestros estudiantes</h1>
+        <p>Estos son los comentarios de nuestros estudiantes</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg" alt="estudiante1">
+                <div>
+                    <p>System Course es la mejor pagina para aprender a programar. Gracias a ellos ahora soy un programador profesional.</p>
+                    <h3>Carla Gómez</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg" alt="estudiante1">
+                <div>
+                    <p>System Course me ayudo a formarme como progamador profesional. Una gran plataforma para aprender desde cero.</p>
+                    <h3>Ramón Gonzalez</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----Call to Action---->
+    <section class="cta" id="contact">
+        <h1>¿Queres aprender a programar?</h1>
+        <a href="#contact-us" class="hero-btn">Contactanos</a>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house" style="color: #f44336;"></i>
+                    <span>
+                        <h5>Visitanos</h5>
+                        <p>Av. Siempre Viva 123</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone" style="color: #f44336;"></i>
+                    <span>
+                        <h5>Llamanos</h5>
+                        <p>+54 11 1234-5678</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope" style="color: #f44336;"></i>
+                    <span>
+                        <h5>Escribinos</h5>
+                        <p>systcourse@gmail.com</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Tema" required>
+                    <textarea  rows="8" placeholder="Mensaje" required></textarea>
+                    <button></button>
+                </form>
+            </div>
+    </section>
+    <!----Footer---->
+    <footer class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>System Course es una plataforma para aprender a programar desde cero. <br> Aprende HTML, CSS, Javascript, PHP y MySQL.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook" style="color: #f44336;"></i>
+            <i class="fa-brands fa-instagram" style="color: #f44336;"></i>
+            <i class="fa-brands fa-twitter" style="color: #f44336;"></i>
+            <i class="fa-brands fa-youtube" style="color: #f44336;"></i>
+        </div>
+        <p>© 2023 System Course. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>
