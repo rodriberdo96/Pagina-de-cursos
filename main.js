@@ -56,7 +56,7 @@ registerForm.submit(function(event) {
     existingUsers.push({ username, password });
 
     // redirigir a la pagina de login
-    window.location.href = "login.html";
+    window.location.href = "Progess.html";
 });
     
     });
