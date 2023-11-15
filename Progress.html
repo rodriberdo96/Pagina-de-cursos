@@ -8,13 +8,26 @@
     <title>Progress</title>
 </head>
 <body>
-<nav>
-    <div class="navbar">
-        <a href="#" id="username"></a>
-        <a href="index.html" class="logout">Logout</a>
-    </div>
-</nav>
-    <div class="container">
+    <section class="header">
+        <nav>
+            <a href="courses.html" class="logo"> System <em>Course</em></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#mycourses">My Courses</a></li>
+                    <li><a href="index.html">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Bienvenido!</h1>
+            <a href="#progreso" class="hero-btn">Ver tu progreso</a>
+        </div>
+    </section>
+
+    <div class="container" id="progreso">
         <div class="skills">
             <h2>Desarrollo Web</h2>
             <div class="progress-bar">
@@ -36,11 +49,31 @@
             </div>
         </div>
     </div>
+    </div>
+        <!----Footer---->
+        <footer class="footer">
+            <h4>Sobre Nosotros</h4>
+            <p>System Course es una plataforma para aprender a programar desde cero. <br> Aprende HTML, CSS, Javascript, PHP y MySQL.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook" style="color: #f44336;"></i>
+                <i class="fa-brands fa-instagram" style="color: #f44336;"></i>
+                <i class="fa-brands fa-twitter" style="color: #f44336;"></i>
+                <i class="fa-brands fa-youtube" style="color: #f44336;"></i>
+            </div>
+            <p>© 2023 System Course. Todos los derechos reservados.</p>
+        </footer>
     <script>
+        var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
     // get the username from existing users
-    const users = ["rodri1", "rodri2", "rodri3"];
-    const username = users[Math.floor(Math.random() * users.length)];
+        const users = ["rodri1", "rodri2", "rodri3"];
+        const username = users[Math.floor(Math.random() * users.length)];
     document.getElementById("username").innerHTML = username;
-</script>
+    </script>
 </body>
 </html>
