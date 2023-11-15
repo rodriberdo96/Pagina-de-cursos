@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <title>Progress</title>
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <a href="#" id="username"></a>
+        <a href="index.html" class="logout">Logout</a>
+    </div>
+</nav>
+    <div class="container">
+        <div class="skills">
+            <h2>Desarrollo Web</h2>
+            <div class="progress-bar">
+                <div class="html">
+                    <span>86%</span>
+                </div>
+            </div>
+            <h2>Backend</h2>
+            <div class="progress-bar">
+                <div class="backend">
+                    <span>65%</span>
+                </div>
+            </div>
+            <h2>Python</h2>
+            <div class="progress-bar">
+                <div class="python">
+                    <span>40%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // get the username from existing users
+    const users = ["rodri1", "rodri2", "rodri3"];
+    const username = users[Math.floor(Math.random() * users.length)];
+    document.getElementById("username").innerHTML = username;
+</script>
+</body>
+</html>
